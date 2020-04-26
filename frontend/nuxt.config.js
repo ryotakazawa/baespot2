@@ -38,7 +38,14 @@ module.exports = {
   modules: [
     '@nuxtjs/vuetify',
     '@nuxtjs/axios',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    '@nuxtjs/redirect-module'
+  ],
+  redirect: [
+    {
+      from: '^/admin',
+      to: 'http://localhost:8080/admin',
+    }
   ],
   axios: {
     host: 'localhost',
