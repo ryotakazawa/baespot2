@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SessionsController < Devise::SessionsController
   skip_before_action :verify_authenticity_token
 
@@ -5,8 +7,7 @@ class SessionsController < Devise::SessionsController
     super { @token = current_token }
   end
 
-  def show
-  end
+  def show; end
 
   private
 
