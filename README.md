@@ -1,6 +1,6 @@
 *To start*
 
-Docker-compose build
+docker-compose build
 
 docker-compose run -u root backend bundle
 
