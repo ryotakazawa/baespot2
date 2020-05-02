@@ -44,7 +44,13 @@ export default {
             password: this.password
           }
         }
-      }).catch(e => {this.error = e + ''})
+      }).catch(e => {
+          if(e.response.status == "401"){
+            this.error = "EmailもしくはPasswordが間違っています"
+          } else{
+            this.error = e + '' 
+          }
+        })
     },
     logout: function () {
       this.$auth.logout().catch(e => {this.error = e + ''})
