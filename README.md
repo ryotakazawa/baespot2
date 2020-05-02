@@ -1,4 +1,5 @@
 *To start*
+git clone https://github.com/ryotakazawa/baespot2.git
 
 docker-compose build
 
